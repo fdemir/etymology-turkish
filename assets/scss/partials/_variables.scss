@@ -1,0 +1,28 @@
+/* stylelint-disable */
+
+$font-size: 1rem;
+
+@mixin container-fixed($gutter: $grid-gutter-width) {
+  padding-right: ceil(($gutter / 2));
+  padding-left: floor(($gutter / 2));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+
+$grid-gutter-width: 30px !default;
+
+$container-tablet: (720px + $grid-gutter-width) !default;
+$container-sm: $container-tablet !default;
+$container-desktop: (940px + $grid-gutter-width) !default;
+$container-md: $container-desktop !default;
+$container-large-desktop: (1140px + $grid-gutter-width) !default;
+$container-lg: $container-large-desktop !default;
