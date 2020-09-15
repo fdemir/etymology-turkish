@@ -71,4 +71,8 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+
+  router: {
+    base: !process.env.NODE_ENV ? '/etymology-turkish/' : '',
+  },
 }
