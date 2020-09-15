@@ -1,6 +1,6 @@
 # Etymology Turkish
 
-Etymology Turkish is a web app that you can use to learn the history and origin of Turkish words.
+Etymology Turkish is a web app that you can use to learn the history and origin of Turkish words. The platform includes thousands of Turkish words. You can look at the old version and roots of words. The design of Etymology Turkish is very simple, useful and responsive.
 
 ## Build Setup
 
