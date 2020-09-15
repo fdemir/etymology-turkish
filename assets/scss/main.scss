@@ -2,11 +2,13 @@
 @import './partials/global';
 
 body {
-  background: #fff;
+  background: #fcfdfd;
   font-size: $font-size;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
+  padding: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #4f4f4f;
 }
 
 input {
