@@ -1,36 +1,51 @@
 <template>
   <div class="search-section">
-    <div class="container">
-      <h2>Bir kelime ara...</h2>
-      <!-- <div class="search-section-input">
-        <input type="text" placeholder="..." />
-      </div> -->
+    <div class="search-section-body">
+      <div class="search-section-body__container container">
+        <h1 class="search-section-body__title">Kelime ara ✍️</h1>
+        <SearchInput />
+        <!-- refactor -->
+        <div style="letter-spacing: 3px">
+          A B C Ç D E F G Ğ H İ I J K L M N O Ö P R S Ş T U Ü V Y Z
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
+<script>
+import SearchInput from './SearchInput'
+export default {
+  components: {
+    SearchInput,
+  },
+}
+</script>
+
 <style lang="scss" scoped>
 .search-section {
-  height: 320px;
-  width: 100%;
-  background: #f1f3f8;
-  display: flex;
+  padding: 18px;
 
-  .container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+  &-body {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(
+      180deg,
+      rgba(51, 51, 51, 0.05) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    border-radius: 6px;
 
-  &-input {
-    input {
-      width: 400px;
-      border: 1px solid rgba(225, 225, 225, 0.76);
-      background: #fff;
-      padding: 1rem;
-      border-radius: 6px;
+    &__container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    &__title {
+      margin-bottom: 25px;
     }
   }
 }
