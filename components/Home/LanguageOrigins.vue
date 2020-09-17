@@ -1,6 +1,9 @@
 <template>
   <div class="language-origins">
-    <h3>Köken Diller</h3>
+    <h3>
+      Köken Diller
+      <link-button> > </link-button>
+    </h3>
     <div class="language-origins__row">
       <language-card text="Türkçe" />
       <language-card text="Almanca" />
