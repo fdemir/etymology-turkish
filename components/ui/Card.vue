@@ -12,6 +12,6 @@
   box-sizing: border-box;
   box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
-  padding: 1rem;
+  padding: 1.3rem 1.5rem;
 }
 </style>
