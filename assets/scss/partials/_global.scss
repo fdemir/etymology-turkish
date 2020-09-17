@@ -1,5 +1,6 @@
 /* stylelint-disable */
 @import './variables';
+@import './utils';
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 html,
@@ -34,4 +35,10 @@ h5,
 h6 {
   color: #333333;
   font-family: 'Roboto Mono';
+  margin-bottom: 1.75rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
