@@ -6,25 +6,14 @@
         <Description />
       </section>
       <section>
+        <Words />
+      </section>
+      <section>
         <LanguageOrigins />
       </section>
     </main>
   </div>
 </template>
-
-<script>
-import SearchSection from '~/components/Home/SearchSection'
-import Description from '~/components/Home/Description'
-import LanguageOrigins from '~/components/Home/LanguageOrigins'
-
-export default {
-  components: {
-    SearchSection,
-    Description,
-    LanguageOrigins,
-  },
-}
-</script>
 
 <style lang="scss" scoped>
 .content {
