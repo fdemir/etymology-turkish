@@ -73,6 +73,6 @@ export default {
   build: {},
 
   router: {
-    base: !process.env.NODE_ENV ? '/etymology-turkish/' : '',
+    base: '/etymology-turkish/',
   },
 }
