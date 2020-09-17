@@ -10,7 +10,7 @@
             <n-link to="">Ana Sayfa</n-link>
           </li>
           <li>
-            <n-link to="/random">Rastgele</n-link>
+            <n-link to="/">Rastgele</n-link>
           </li>
           <li>
             <a href="https://github.com/frndmr/etymology-turkish">Github</a>
