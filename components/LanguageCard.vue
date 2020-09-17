@@ -1,20 +1,16 @@
 <template>
   <div class="language-card">
-    <Card> {{ text }} </Card>
+    <card> {{ text }} </card>
   </div>
 </template>
 
 <script>
-import { Card } from '~/components/ui'
 export default {
   props: {
     text: {
       type: String,
       default: '',
     },
-  },
-  components: {
-    Card,
   },
 }
 </script>
