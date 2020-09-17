@@ -5,9 +5,7 @@
         <h1 class="search-section-body__title">Kelime ara ✍️</h1>
         <SearchInput />
         <!-- refactor -->
-        <div style="letter-spacing: 3px">
-          A B C Ç D E F G Ğ H İ I J K L M N O Ö P R S Ş T U Ü V Y Z
-        </div>
+        <div style="letter-spacing: 3px">Ç Ğ Ö Ş Ü</div>
       </div>
     </div>
   </div>
