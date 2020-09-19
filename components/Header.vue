@@ -23,6 +23,8 @@
 
 <style lang="scss" scoped>
 /* stylelint-disable */
+@import '~/assets/scss/partials/breakpoints';
+
 .navbar {
   height: 82px;
   width: 100%;
@@ -40,6 +42,10 @@
   &-links {
     display: flex;
     list-style-type: none;
+
+    @include bp(tablet-sm) {
+      display: none;
+    }
 
     li {
       padding-left: 35px;

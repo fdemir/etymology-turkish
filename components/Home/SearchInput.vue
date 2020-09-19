@@ -30,12 +30,31 @@ export default {
 
 <style lang="scss" scoped>
 /* stylelint-disable */
+@import '~/assets/scss/partials/breakpoints';
 $input-icon-width: 40px;
 $input-height: 45px;
 
 .search-input {
   display: flex;
   margin-bottom: 30px;
+
+  @include bp(mobile-sm) {
+    &-random-btn {
+      display: none;
+    }
+    &-box {
+      margin: 0 !important;
+    }
+  }
+
+  @include bp(tablet-sm) {
+    width: 100%;
+
+    &-box {
+      width: auto !important;
+      flex: 1;
+    }
+  }
 
   &-box {
     width: 400px;

@@ -23,11 +23,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/* stylelint-disable */
+@import '~/assets/scss/partials/breakpoints';
+
 .language-origins {
   &__row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
+
+    @include bp(tablet-sm) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 </style>

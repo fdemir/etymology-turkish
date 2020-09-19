@@ -16,12 +16,23 @@
 </template>
 
 <style lang="scss" scoped>
+/* stylelint-disable */
+@import '~/assets/scss/partials/breakpoints';
+
 .footer {
   width: 100%;
   height: 80px;
+
   .footer-container {
     display: flex;
     justify-content: space-between;
+
+    @include bp(mobile-sm) {
+      > div:first-child {
+        margin-bottom: 20px;
+      }
+      flex-direction: column;
+    }
   }
 
   .footer-links {

@@ -30,11 +30,19 @@
 </template>
 
 <style lang="scss" scoped>
+/* stylelint-disable */
+@import '~/assets/scss/partials/breakpoints';
+
 .word-categories {
   &-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 15px;
+
+    @include bp(mobile-sm) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 15px;
+    }
   }
 
   .word-list {
