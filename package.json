@@ -41,5 +41,9 @@
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-standard": "^20.0.0",
     "vue-jest": "^3.0.4"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/frndmr/etymology-turkish.git",
+  "author": "Furkan Demir <furkan.demir_@outlook.com>",
+  "license": "MIT"
 }

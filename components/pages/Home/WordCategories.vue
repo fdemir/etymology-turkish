@@ -1,29 +1,14 @@
 <template>
   <div class="word-categories">
-    <h3>
-      Kelime Kategorileri
-      <link-button> > </link-button>
-    </h3>
     <div class="word-categories-row">
-      <card>
-        <h3 class="mt-0 mb-1">Türeme</h3>
+      <card v-for="x in 6" :key="x" class="word-categories-col">
+        <h3 class="mt-0 mb-0">Türeme</h3>
         <ul class="word-list mb-2">
           <li>kolaj</li>
-          <li>enva</li>
           <li>seramik</li>
           <li>polarize</li>
         </ul>
-        <link-button>Tümünü Göster ></link-button>
-      </card>
-      <card>
-        <h3 class="mt-0 mb-1">Ses Evrimi</h3>
-        <ul class="word-list mb-2">
-          <li>pelikan</li>
-          <li>orta</li>
-          <li>bulamak</li>
-          <li>çek</li>
-        </ul>
-        <link-button>Tümünü Göster ></link-button>
+        <link-button>Tümünü Gör</link-button>
       </card>
     </div>
   </div>
@@ -36,13 +21,16 @@
 .word-categories {
   &-row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 
     @include bp(mobile-sm) {
       grid-template-columns: 1fr;
-      grid-row-gap: 15px;
     }
+  }
+
+  &-col {
+    margin-bottom: 30px;
   }
 
   .word-list {
@@ -53,6 +41,13 @@
     li {
       color: #4f4f4f;
       padding: 4px 0;
+      cursor: pointer;
+      font-family: 'Roboto Mono';
+
+      &::before {
+        content: '-';
+        margin-right: 10px;
+      }
     }
   }
 }

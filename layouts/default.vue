@@ -1,18 +1,20 @@
 <template>
   <div>
-    <Header />
+    <div class="test">
+      <Header />
+      <SearchSection />
+    </div>
     <Nuxt />
     <Footer />
   </div>
 </template>
 
-<script>
-import Header from '~/components/Header'
-import Footer from '~/components/Footer'
-export default {
-  components: {
-    Header,
-    Footer,
-  },
+<style lang="scss" scoped>
+.test {
+  background: linear-gradient(
+    180deg,
+    rgba(191, 158, 56, 0) 0%,
+    rgba(191, 157, 56, 0.3) 100%
+  );
 }
-</script>
+</style>

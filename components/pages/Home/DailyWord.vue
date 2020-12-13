@@ -1,6 +1,5 @@
 <template>
   <div class="daily-word">
-    <h3>Günlük Kelime</h3>
     <card>
       <h3 class="mt-0 mb-1 daily-word__title">Kolaj</h3>
       <div>

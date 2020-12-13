@@ -6,11 +6,16 @@
 /* stylelint-disable */
 .link-button {
   border-radius: 6px;
-  background: rgba(47, 128, 237, 0.1);
-  color: #2f80ed;
+  background: #f3f3f3;
+  color: #4f4f4f;
   padding: 4px 12px;
   text-decoration: none;
   font-family: 'Roboto Mono';
   font-weight: 500;
+
+  &:hover {
+    color: #fff;
+    background: #4f4f4f;
+  }
 }
 </style>

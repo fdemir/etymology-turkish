@@ -7,23 +7,21 @@
       <input
         type="text"
         class="search-input-box__input"
-        placeholder="bir kelime, sözcük"
+        placeholder="sözcük arat"
       />
     </div>
-    <button class="search-input-random-btn">
+    <!-- <button class="search-input-random-btn">
       <ShuffleIcon />
-    </button>
+    </button> -->
   </div>
 </template>
 
 <script>
 import SearchIcon from 'feather-icons/dist/icons/search.svg?inline'
-import ShuffleIcon from 'feather-icons/dist/icons/shuffle.svg?inline'
 
 export default {
   components: {
     SearchIcon,
-    ShuffleIcon,
   },
 }
 </script>
@@ -32,11 +30,10 @@ export default {
 /* stylelint-disable */
 @import '~/assets/scss/partials/breakpoints';
 $input-icon-width: 40px;
-$input-height: 45px;
+$input-height: 50px;
 
 .search-input {
   display: flex;
-  margin-bottom: 30px;
 
   @include bp(mobile-sm) {
     &-random-btn {
@@ -57,13 +54,17 @@ $input-height: 45px;
   }
 
   &-box {
-    width: 400px;
+    width: 450px;
     height: $input-height;
-    border-radius: 6px;
-    background: #fff;
-    border: 1px solid #434a54;
-    box-shadow: 4px 3px 0px rgba(0, 0, 0, 0.25);
-    margin-right: 25px;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
+      0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0372137),
+      0px 22.3363px 17.869px rgba(0, 0, 0, 0.023046),
+      0px 12.5216px 10.0172px rgba(0, 0, 0, 0.0143632),
+      0px 6.6501px 5.32008px rgba(0, 0, 0, 0.00826158),
+      0px 2.76726px 2.21381px rgba(0, 0, 0, 0.00364935);
+    border-radius: 12px;
     position: relative;
     padding-left: $input-icon-width;
     display: flex;
@@ -90,6 +91,7 @@ $input-height: 45px;
       padding: 0;
       border: 0;
       margin: 2px;
+      background: transparent;
 
       &::placeholder {
         color: #4f4f4f;

@@ -1,13 +1,16 @@
 <template>
   <div class="navbar">
     <div class="container navbar-container">
-      <div>
-        <img src="~/assets/images/elibelinde.png" style="height: 50px" alt="" />
-      </div>
+      <n-link to="/">
+        <img src="~/assets/images/logo.svg" class="navbar-logo" alt="" />
+      </n-link>
       <div>
         <ul class="navbar-links">
           <li>
             <n-link to="">Ana Sayfa</n-link>
+          </li>
+          <li>
+            <n-link to="/bilgi">Bilgi</n-link>
           </li>
           <li>
             <n-link to="/">Rastgele</n-link>
@@ -28,9 +31,12 @@
 .navbar {
   height: 82px;
   width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #eff0f0;
+  background: transparent;
   z-index: 100;
+
+  &-logo {
+    height: 50px;
+  }
 
   &-container {
     display: flex;

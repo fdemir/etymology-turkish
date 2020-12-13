@@ -1,9 +1,11 @@
 <template>
   <div class="content">
-    <SearchSection />
     <main class="container">
       <section class="description">
         <Description />
+      </section>
+      <section class="motifs-divider">
+        <img src="~/assets/images/motifs-divider.png" width="100%" alt="" />
       </section>
       <section class="words">
         <Words />
@@ -20,8 +22,13 @@
 @import '~/assets/scss/partials/breakpoints';
 
 .content {
+  background: url('~assets/images/elibelinde_transparent.png');
+  background-repeat: no-repeat;
+  background-position: 100% 50px;
+  background-size: 300px, 150px;
+
   main {
-    padding: 25px 15px;
+    padding: 60px 15px;
     display: flex;
     flex-direction: column;
 
@@ -35,6 +42,10 @@
 
     section {
       padding-bottom: 30px;
+
+      &.motifs-divider {
+        padding: 30px 0;
+      }
     }
   }
 }
