@@ -3,15 +3,13 @@
     <div class="container">
       <section class="word-page__section">
         <alert-box>
-          <h1 class="m-0">{{ name }}</h1>
+          <h1 class="m-0">d</h1>
         </alert-box>
       </section>
 
       <section class="word-page__section">
         <h3 class="mb-2">Kaynak</h3>
-        <span>
-          {{ source }}
-        </span>
+        <span>- </span>
       </section>
 
       <section class="word-page__section">
@@ -26,37 +24,11 @@
 
       <section class="word-page__section">
         <h3 class="mb-2">Ek Bilgi</h3>
-        <span v-html="additional_desc"> </span>
+        <!-- <span v-html="additional_desc"> </span> -->
       </section>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  async asyncData({ error, params, $axios }) {
-    const { value } = params
-    try {
-      const result = await $axios.get('/word/' + value)
-      const { value: name, additional_desc, source } = result.data
-      return {
-        name,
-        additional_desc,
-        source,
-      }
-    } catch {
-      error({ statusCode: 404 })
-    }
-  },
-  data() {
-    return {
-      name: '',
-      additional_desc: '',
-      source: '',
-    }
-  },
-}
-</script>
 
 <style lang="scss" scoped>
 .word-page {
