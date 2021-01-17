@@ -10,9 +10,6 @@
       <section class="words">
         <Words />
       </section>
-      <section class="language-origins">
-        <LanguageOrigins />
-      </section>
     </main>
   </div>
 </template>
