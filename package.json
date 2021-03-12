@@ -20,7 +20,7 @@
     "@nuxtjs/svg": "^0.1.12",
     "feather-icons": "^4.28.0",
     "node-sass": "^4.14.1",
-    "nuxt": "^2.13.0",
+    "nuxt": "^2.15.3",
     "sass-loader": "^10.0.2"
   },
   "devDependencies": {
@@ -44,6 +44,6 @@
   },
   "main": "index.js",
   "repository": "https://github.com/frndmr/etymology-turkish.git",
-  "author": "Furkan Demir <furkan.demir_@outlook.com>",
+  "author": "Furkan Demir <info@furkandemir.dev>",
   "license": "MIT"
 }
