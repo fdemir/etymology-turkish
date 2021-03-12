@@ -70,10 +70,10 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
-    // publicPath: '/etymology-turkish/app/',
+    publicPath: '/etymology-turkish/app/',
   },
 
   router: {
-    // base: '/etymology-turkish/',
+    base: '/etymology-turkish/',
   },
 }
