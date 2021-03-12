@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{292:function(n,e,t){"use strict";t.r(e);var c=t(42),component=Object(c.a)({},(function(){var n=this,e=n.$createElement;return(n._self._c||e)("div",[n._v("Linguistic prescription")])}),[],!1,null,null,null);e.default=component.exports}}]);
