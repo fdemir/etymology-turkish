@@ -4,7 +4,7 @@ Etymology Turkish is a web app that you can use to learn the history and origin 
 
 ## Demo
 
-[Etymology Turkish](https://frndmr.github.io/etymology-turkish/)
+[Etymology Turkish](https://fdemir.github.io/etymology-turkish/)
 
 ## Build Setup
 
